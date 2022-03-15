@@ -2,7 +2,7 @@
 
 1. expat-devel 설치
 ```
- yum install gcc gcc-c++ expat-devel zlib-devel (root로 해야한다.)
+ yum install gcc gcc-c++ expat-devel zlib-devel (root권한)
 ```
 
 
@@ -24,7 +24,7 @@ cd  /home/apps/
 tar xvfz apr-1.7.0.tar.gz
 cd apr-1.7.0
 ./configure --prefix=/home/apps/apr
-cp -arp libtool libtoolT (해줘야한다. 중요함)
+cp -arp libtool libtoolT (중요)
 make
 make install
 ```
@@ -41,7 +41,7 @@ make install
 ```
 
 
-5. openssl 설치(root로 해야한다.)
+5. openssl 설치 (root권한)
 ```
 cd  /home/apps/
 tar xvfz openssl-1.1.0d.tar.gz
