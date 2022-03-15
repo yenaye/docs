@@ -13,15 +13,15 @@
 ```
 
 
-2. java 명령어 셋팅(root로 해야함)
+2. java 명령어 셋팅 (root권한)
 ```
  cd /usr/bin/
- rm -f java (기존에 java가 있을 경우 삭제한다.)
+ rm -f java (기존에 java가 있을 경우 삭제)
  ln -s /home/apps/jdk1.8.0_231/bin/java java
 ```
 
 
-3. 환경변수 설정 (root로 해야한다.)
+3. 환경변수 설정 (root권한)
 ```
  cd /etc/
  vi profile
@@ -58,11 +58,11 @@
 ```
 
 
-2. 환경변수 설정 (root로 해야한다.)
+2. 환경변수 설정 (root권한)
 ```
  cd /etc/
  vi profile
- (java 설정 줄에 추가한다.)
+ (java 설정 줄에 추가)
  CATALINA_HOME=/home/apps/tomcat
  PATH=$PATH:$JAVA_HOME/bin:$CATALINA_HOME/bin
  export JAVA_HOME CLASSPATH PATH CATALINA_HOME
